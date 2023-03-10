@@ -22,4 +22,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// selam naber
+// selam naber, naber dedim lan
