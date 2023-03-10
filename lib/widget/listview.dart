@@ -3,16 +3,19 @@ import 'package:gokhan_cv/theme/color.dart';
 import 'package:jeafriday/jeafwidget.dart';
 
 class HomePageListView extends StatelessWidget {
+  final BoxConstraints constraints;
   final String title;
   final String subtitle;
   final String image;
   final String id;
-  const HomePageListView(
-      {super.key,
-      required this.title,
-      required this.subtitle,
-      required this.image,
-      required this.id});
+  const HomePageListView({
+    super.key,
+    required this.title,
+    required this.subtitle,
+    required this.image,
+    required this.id,
+    required this.constraints,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +25,7 @@ class HomePageListView extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         onTap: () {},
         child: Container(
+          width: constraints.maxWidth / 2,
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
           child: LayoutBuilder(

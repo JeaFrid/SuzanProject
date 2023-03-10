@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gokhan_cv/page/home.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:jeafriday/jeafriday.dart';
+import 'package:jeafriday/jeafwidget.dart';
 
 void main() {
   runApp(const MyApp());
